@@ -1,0 +1,46 @@
+$gray-700: rgb(170, 0, 0);
+
+@mixin header-link ($hover: true) {
+    color: $gray-700;
+    text-decoration: none;
+    letter-spacing: 5px;
+
+    @if $hover {
+        &:hover{
+        border-bottom: solid 2px $gray-700;
+        }
+    }
+}
+
+.header {
+    background-color: rgb(45, 25, 63);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+
+&__logo {
+   @include header-link(false);
+   color: white;
+   font-size: 50px;
+}    
+
+&__nav-list {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-family: sans-serif;
+    
+}
+
+&__item-link {
+    @include header-link;
+
+    &--is-active {
+        border-bottom: solid 10px $gray-700;
+    }
+}
+
+ 
+}
+
