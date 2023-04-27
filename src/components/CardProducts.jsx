@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom'
 import imageDefault from '../assets/default.jpg'
 import '../styles/home.scss'
 // eslint-disable-next-line camelcase
-const CardProducts = ({ product_name, image, price, _id }) => {
+const CardProducts = ({ product_name, image, price, id }) => {
   return (
     <>
-      <Link to={`${_id}`}>
+      <Link to={`${id}`}>
         <div className='card' style={{ width: '18rem' }}>
           <img src={image || imageDefault} className='card-img-top' alt='...' />
           <div className='card-body'>

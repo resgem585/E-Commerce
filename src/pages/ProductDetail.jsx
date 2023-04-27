@@ -35,7 +35,7 @@ const ProductDetail = () => {
             <p className='contendor__textDescription'> Description: {data.description}</p>
             <p className='contenedor__textCategory'>Category: {data.category}</p>
             <p className='contenedor__textBrand mb-5'>Brand: {data.brand}</p>
-            <button className='contenedor__button' disabled='true'>Comprar ahora</button>
+            <button className='contenedor__button' disabled>Comprar ahora</button>
 
           </div>
         </div>
